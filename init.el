@@ -5,6 +5,26 @@
 ;; This is the first thing to get loaded.
 ;;
 
+;; org2blog
+(setq load-path (cons "~/orgmode/org2blog/" load-path))
+(require 'org2blog-autoloads)
+
+;; XML-RPC library
+(setq load-path (cons "~/orgmode/" load-path))
+(require 'xml-rpc)
+
+;; metaweblog.el Library
+(setq load-path (cons "~/orgmode/metaweblog/" load-path))
+(require 'metaweblog)
+
+(setq org2blog/wp-blog-alist
+      '(("wordpress"
+         :url "http://jakeyeung.wordpress.com/xmlrpc.php"
+         :username "jakeyeung"
+         :default-title "Hello World"
+         :default-categories ("org2blog" "emacs")
+         :tags-as-categories nil)))
+
 ;; remember this directory
 (defconst starter-kit-dir (file-name-directory (or load-file-name (buffer-file-name)))
     "directory where the starterkit is installed")
