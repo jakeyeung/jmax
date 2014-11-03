@@ -5,6 +5,11 @@
 ;; This is the first thing to get loaded.
 ;;
 
+;; Configure package.el
+;; Install Magit via M-x package-install RET magit RET
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;; org2blog
 (setq load-path (cons "~/orgmode/org2blog/" load-path))
 (require 'org2blog-autoloads)
