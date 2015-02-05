@@ -1,7 +1,7 @@
 (setq org-agenda-files (list "~/orgmode/org-jake/projects.org"
 			     "~/orgmode/org-jake/next-actions.org"
 			     "~/orgmode/org-jake/someday.org"))
-(setq org-default-notes-file (concat org-directory "~/orgmode/org-jake/notes.org"))
+(setq org-default-notes-file "~/orgmode/org-jake/notes.org")
 (setq org-clock-idle-time '15)
 
 (setq user-full-name "Jake Yeung"
