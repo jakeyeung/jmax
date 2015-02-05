@@ -4,6 +4,10 @@
 (setq org-default-notes-file "~/orgmode/org-jake/notes.org")
 (setq org-clock-idle-time '15)
 
+(find-file "/Users/jakeyeung/orgmode/org-jake/projects.org")
+(make-frame-command)
+(find-file "/Users/jakeyeung/orgmode/org-jake/next-actions.org")
+
 (setq user-full-name "Jake Yeung"
       googleid "jakeyeung"
       user-mail-address "jakeyeung@gmail.com"
